@@ -63,8 +63,16 @@ const Header = () => {
       </nav>
 
       <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        <ion-icon
+          className="icon-mobile-nav"
+          name="menu-outline"
+          style={{ width: '4rem', height: '4rem', color: '#fff' }}
+        ></ion-icon>
+        <ion-icon
+          className="icon-mobile-nav"
+          name="close-outline"
+          style={{ width: '4rem', height: '4rem', color: '#fff' }}
+        ></ion-icon>
       </button>
     </header>
   );

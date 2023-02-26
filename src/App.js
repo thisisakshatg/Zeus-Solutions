@@ -17,6 +17,9 @@ import Slider from './Utilities/Slider/Slider';
 import Carousel from './Utilities/Carousel/Carousel';
 import CareersCard from './Utilities/CareersCard/CareersCard';
 import Careers from './components/Careers/Careers';
+import CareersPage from './components/CareersPage/CareersPage';
+import ApplyForm from './components/ApplyForm/ApplyForm';
+import Services from './components/Services/Services';
 
 function App() {
   return (
@@ -34,8 +37,16 @@ function App() {
           <CaseStudies />
           <Footer />
         </Route>
-        <Route path="/careers">
+        <Route path="/careers" exact>
           <Careers />
+          <Footer />
+        </Route>
+        {/* <Route path="/services" exact>
+          <Services />
+          <Footer />
+        </Route> */}
+        <Route path="/careers/:name">
+          <CareersPage />
           <Footer />
         </Route>
         <Route path="/industries" exact>
@@ -60,8 +71,8 @@ function App() {
           <Footer />
         </Route>
 
-        <Route path="/careerscard">
-          <CareersCard />
+        <Route path="/applyform">
+          <ApplyForm />
           <Footer />
         </Route>
 

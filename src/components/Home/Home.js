@@ -88,9 +88,8 @@ const Home = () => {
       </section>
 
       {/* SECTION-HOW */}
-      <section class="section-how pos-rel" id="how">
+      <section class="section-how" id="how">
         <div class="container">
-          {/* <span class="subheading">Our Specialty</span> */}
           <h2 class="heading-secondary">OUR SPECIALTIES</h2>
         </div>
 

@@ -5,10 +5,7 @@ import Header from '../Header/Header';
 const ContactUs = () => {
   return (
     <div>
-      <Cover
-        heading="Contact Us"
-        description="Time to reach out and find the next step in your journey."
-      />
+      <Cover heading="Contact Us" description="" />
       <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
