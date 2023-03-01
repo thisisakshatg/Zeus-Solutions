@@ -894,6 +894,7 @@ strong {
   .section-Contactt .heading-contact {
     font-size: 1.45rem;
     line-height: 1.2;
+    margin-left: 0.5px;
   }
 
   .section-Contactt .icon-loc {
@@ -1187,7 +1188,7 @@ strong {
 
   .section-Contactt .btn--about {
     padding: 0.8rem 3.6rem !important;
-    margin-left: 8rem;
+    margin-left: 7.8rem;
   }
 
   .section-how .step-img-box {
@@ -1242,6 +1243,30 @@ strong {
   margin-bottom: 0;
 }
 
+.cta-text-box form input:-moz-placeholder,
+.cta-text-box form input::placeholder,
+.cta-text-box form select:-moz-placeholder,
+.cta-text-box form select::placeholder,
+.cta-text-box form textarea:-moz-placeholder,
+.cta-text-box form textarea::placeholder {
+  color: rgba(44, 45, 47, 0.5);
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width: 87.5%;
+  border: none;
+  resize: none;
+  padding: 0.9rem 1.2rem;
+  font-size: 1.8rem;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 2px;
+}
+
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
@@ -1251,6 +1276,17 @@ strong {
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: 1fr;
+  }
+
+  textarea {
+    width: 94.5%;
+    font-size: 1.1rem;
+    height: 8rem;
+  }
+
+  .section-Contactt .icon-loc {
+    width: 5.1rem;
+    margin-right: 1.8rem;
   }
 
   .footer-new .column {
@@ -1280,15 +1316,15 @@ strong {
   }
 
   .new-1 {
-    margin-left: 4rem !important;
+    margin-left: 6rem !important;
   }
 
   .footer-new .new-2 {
-    margin-left: 14.5rem !important;
+    margin-left: 10.5rem !important;
   }
 
   .footer-new .new-3 {
-    margin-left: 12.5rem !important;
+    margin-left: 8.5rem !important;
   }
 
   .footer-new .small-foot {
@@ -1643,11 +1679,6 @@ strong {
 
   .section-Contactt .about-loc {
     gap: 0;
-  }
-
-  .section-Contactt .icon-loc {
-    width: 3.8rem;
-    margin-right: 1.8rem;
   }
 
   .section-Contactt .margin-helper {
@@ -4023,7 +4054,7 @@ header .nav-btn {
   background-image: none;
   /* background-image: url(/art/backgrounds/background-happy-dark.svg); */
   display: block;
-  padding: 6rem 3rem;
+  padding: 4rem 3rem;
   position: relative;
   z-index: 1;
   border: 0;

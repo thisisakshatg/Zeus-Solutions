@@ -59,14 +59,21 @@ const ContactUs = () => {
 
                 <div>
                   {/* <label for="email">Email address</label> */}
-                  <input
+                  {/* <input
                     id="full-name"
                     type="text"
                     placeholder="Your Message*"
                     name="full-name"
                     className="special-msg"
                     required
-                  />
+                  /> */}
+
+                  <textarea
+                    cols="50 "
+                    rows="7"
+                    placeholder="Your Message"
+                    data-assigned-row="3"
+                  ></textarea>
                 </div>
 
                 <button class="btn btn--form">Send Message</button>
