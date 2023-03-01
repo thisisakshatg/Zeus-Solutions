@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Card = (props) => {
   const redirect = `/industries/${props.industry}`;
+  const l = props.links;
   return (
     <div class="meal">
       <img
@@ -11,9 +12,6 @@ const Card = (props) => {
         alt="Japanese Gyozas"
       />
       <div class="meal-content">
-        <div class="meal-tags">
-          <span class="tag tag--industry">{props.tag}</span>
-        </div>
         <p class="meal-title">{props.title}</p>
         <ul class="meal-attributes">
           <li class="meal-attribute">
@@ -23,6 +21,11 @@ const Card = (props) => {
         {props.showReadMore != 'false' && (
           <Link to={redirect} className="btn btn--full btn-card">
             Read More
+          </Link>
+        )}
+        {props.homepage != 'false' && (
+          <Link to={l} className="btn btn--full btn-card">
+            Learn More
           </Link>
         )}
       </div>

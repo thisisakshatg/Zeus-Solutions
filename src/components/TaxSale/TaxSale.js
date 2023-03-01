@@ -19,11 +19,11 @@ const TaxSale = () => {
           </div>
         </section>
       </div>
-      <section class="section-cta" id="cta">
+      <section class="section-cta section-sale" id="cta">
         <div class="container">
           <div class="about-cta">
             <div class="cta-text-box">
-              <h2 class="heading-secondary">Tax Sale Portal</h2>
+              {/* <h2 class="heading-secondary">Tax Sale Portal</h2> */}
               <p class="feature-text heading-abouts">
                 Zeus Tax Sale Portal makes it easy and affordable to gain access
                 to tax auction data across the country. Zeus Tax Portal provides
@@ -54,10 +54,9 @@ const TaxSale = () => {
             <div class="cta-about-box" aria-label="Woman enjoying food">
               <Player
                 src="https://assets8.lottiefiles.com/packages/lf20_xu6vjlhz.json"
-                className="player"
+                className="player animation-taxsale"
                 loop
                 autoplay
-                style={{ height: '45rem', width: '45rem' }}
               />
             </div>
           </div>
@@ -80,7 +79,16 @@ const TaxSale = () => {
               </p>
               <br></br>
             </div>
+
             <Slider />
+          </div>
+          <div className="demo-button">
+            <a
+              href="/contact-us"
+              class="btn btn--full margin-right-sm btn-rights"
+            >
+              Request for Demo
+            </a>
           </div>
         </div>
       </section>

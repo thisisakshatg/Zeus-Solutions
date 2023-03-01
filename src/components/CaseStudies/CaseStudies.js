@@ -18,13 +18,14 @@ const CaseStudies = (props) => {
           </div>
         </section>
       </div>
-      <div className="container grid grid--3-cols margin-bottom-md">
+      <div className="container grid grid--3-cols margin-bottom-md cases">
         <Card
           image="Oil.jpg"
           tag="Oil"
           title="Oil Major"
           description="Program management of a new market entry in Mexico and Brazil to expand its commodities trading capabilities "
           showReadMore="false"
+          homepage="false"
         />
         <Card
           image="energy.jpg"
@@ -32,12 +33,14 @@ const CaseStudies = (props) => {
           title="Energy Trading"
           description="Implementing a digital strategy and data platform on Azure cloud for an energy trading company "
           showReadMore="false"
+          homepage="false"
         />
         <Card
           image="petroleum.jpg"
           tag="Petroleum"
           title="Petroleum Retailer"
           description="Implementing a mobility data platform on Azure cloud"
+          homepage="false"
           showReadMore="false"
         />
         <Card
@@ -45,6 +48,7 @@ const CaseStudies = (props) => {
           tag="Petroleum"
           title="Petroleum Retailer"
           description="Implementing systems and data integration of loyalty and credit payments for unmanned CNG stations"
+          homepage="false"
           showReadMore="false"
         />
         <Card
@@ -52,6 +56,7 @@ const CaseStudies = (props) => {
           tag="Electric"
           title="Electric Utility"
           description="Help deliver a financial reporting platform using SAP HANA data warehouse and Tableau intelligence tools"
+          homepage="false"
           showReadMore="false"
         />
         <Card
@@ -59,6 +64,7 @@ const CaseStudies = (props) => {
           tag="Oil"
           title="Oil Upstream"
           description="Creating new insights using scientific methods for the Upstream Engineering teams. Business value insights using field data"
+          homepage="false"
           showReadMore="false"
         />
         <Card
@@ -66,6 +72,7 @@ const CaseStudies = (props) => {
           tag="Healthcare"
           title="Healthcare Pharma"
           description="Providing Enterprise IT Architecture advise and high-level solution design for retail pharmacy business"
+          homepage="false"
           showReadMore="false"
         />
       </div>

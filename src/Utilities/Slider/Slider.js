@@ -245,11 +245,11 @@ const Slider = () => {
   const containerStyles = {
     width: '50rem',
     height: '28rem',
-    margin: '8rem auto',
+    margin: '4rem auto',
   };
   return (
     <div>
-      <div style={containerStyles}>
+      <div className="containerStyles">
         <ImageSlider slides={slides} parentWidth={500} />
       </div>
     </div>

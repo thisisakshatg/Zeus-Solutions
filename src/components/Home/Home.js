@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
+import Card from '../../Utilities/Card/Card';
 
 import { Player } from '@lottiefiles/react-lottie-player';
 
@@ -23,6 +24,13 @@ const Home = () => {
         </div>
       </section>
 
+      {/* /contactGetData */}
+      {/*  
+      Hit action button->
+       request to backend url ->
+        response data 
+        -> render response data on frontend*/}
+
       {/* SECTION FEATURES */}
 
       <section class="section-pricing pos-rel" id="pricing">
@@ -31,7 +39,7 @@ const Home = () => {
           <h2 class="heading-secondary">What we do best</h2>
         </div>
 
-        <div class="container grid grid--4-cols">
+        <div class="container grid grid--4-cols grid--pricing">
           <div class="feature">
             <Player
               src="https://assets5.lottiefiles.com/packages/lf20_cdRQyb.json"
@@ -41,9 +49,9 @@ const Home = () => {
               style={{ height: '20rem', width: '20rem' }}
             />
             <p class="feature-title heading-benefits">Laser Fast Delivery</p>
-            <p class="feature-text">
+            {/* <p class="feature-text">
               On time Delivery of products and services to serve best
-            </p>
+            </p> */}
           </div>
           <div class="feature">
             <Player
@@ -54,9 +62,9 @@ const Home = () => {
               style={{ height: '20rem', width: '20rem' }}
             />
             <p class="feature-title heading-benefits">Business Insights</p>
-            <p class="feature-text">
+            {/* <p class="feature-text">
               Analyse and generate statistical insights from data
-            </p>
+            </p> */}
           </div>
           <div class="feature">
             <Player
@@ -67,9 +75,9 @@ const Home = () => {
               style={{ height: '20rem', width: '20rem' }}
             />
             <p class="feature-title heading-benefits">Get Business Value</p>
-            <p class="feature-text">
+            {/* <p class="feature-text">
               Unlock and get your business value at all times
-            </p>
+            </p> */}
           </div>
           <div class="feature">
             <Player
@@ -80,11 +88,39 @@ const Home = () => {
               style={{ height: '20rem', width: '20rem' }}
             />
             <p class="feature-title heading-benefits">Agile Code Stack</p>
-            <p class="feature-text">
+            {/* <p class="feature-text">
               Agile and lean principle application for optimum results
-            </p>
+            </p> */}
           </div>
         </div>
+        <section class="section-caseStudies">
+          <div className="container grid grid--3-cols margin-bottom-md cases">
+            <Card
+              image="p.jpg"
+              title="Who We Are"
+              description="We specialize in IT and Business Consultancies, Small to Large Scale Technology Deliveries.... "
+              showReadMore="false"
+              homepage="true"
+              links="/about"
+            />
+            <Card
+              image="energy.jpg"
+              title="Our Industries"
+              description="After more than two decades in the industry, we have established as a go to firm for top tier talent in technology."
+              showReadMore="false"
+              homepage="true"
+              links="/industries"
+            />
+            <Card
+              image="q.jpg"
+              title="Our Tools and Solutions"
+              description="Zeus Tax Sale Portal makes it easy and affordable to gain access to tax auction data across the country."
+              showReadMore="false"
+              homepage="true"
+              links="/tax-sale-portal"
+            />
+          </div>
+        </section>
       </section>
 
       {/* SECTION-HOW */}
@@ -93,7 +129,7 @@ const Home = () => {
           <h2 class="heading-secondary">OUR SPECIALTIES</h2>
         </div>
 
-        <div class="container grid grid--2-cols grid--center-v">
+        <div class="container grid grid--2-cols grid--center-v grid-section-how">
           <div class="step-text-box">
             <p class="step-number">01</p>
             <h3 class="heading-tertiary">Trading and Risk management</h3>
@@ -124,26 +160,24 @@ const Home = () => {
           <div class="step-img-box">
             <Player
               src="https://assets2.lottiefiles.com/packages/lf20_zhADUdzV8b.json"
-              className="player"
+              className="player animation-homepage-how"
               loop
               autoplay
-              style={{ height: '40rem', width: '40rem' }}
             />
           </div>
 
-          <div class="step-img-box">
+          <div class="step-img-box boxer-2">
             <Player
               src="https://assets9.lottiefiles.com/packages/lf20_tljjahng.json"
-              className="player"
+              className="player animation-homepage-how-2"
               loop
               autoplay
-              style={{ height: '50rem', width: '50rem' }}
             />
           </div>
           <div class="step-text-box">
             <p class="step-number">02</p>
             <h3 class="heading-tertiary">Data and Analytics</h3>
-            <ul class="list">
+            <ul class="list list-2">
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Data Warehouse and Reporting Platform Modernization</span>
@@ -188,10 +222,9 @@ const Home = () => {
           <div class="step-img-box">
             <Player
               src="https://assets2.lottiefiles.com/packages/lf20_14uss47o.json"
-              className="player"
+              className="player animation-homepage-how-3"
               loop
               autoplay
-              style={{ height: '50rem', width: '50rem' }}
               speed={2}
             />
           </div>
@@ -199,10 +232,7 @@ const Home = () => {
       </section>
       <p class="plan-details">
         {/* To learn more about our programs:{' '} */}
-        <a
-          href="https://zeussolutionsinc.com/services/"
-          class="btn btn--full btn--card"
-        >
+        <a href="/services/" class="btn btn--full btn--card">
           Learn more
         </a>
       </p>
@@ -219,7 +249,7 @@ const Home = () => {
               <div class="grid grid--2-cols statistic-data-sec">
                 <div class="feature">
                   <p class="statistics-text">
-                    <span class="statistics">60+</span> Counting Projects
+                    <span class="statistics">60+</span> Projects
                   </p>
                 </div>
                 <div class="feature">
@@ -229,7 +259,7 @@ const Home = () => {
                 </div>
                 <div class="feature">
                   <p class="statistics-text">
-                    <span class="statistics">13+</span> Consecutive Years
+                    <span class="statistics">13+</span> Years
                   </p>
                 </div>
                 <div class="feature">
@@ -338,7 +368,7 @@ const Home = () => {
 
       {/* SECTION ABOUT */}
 
-      <section class="section-about">
+      <section class="home section-about">
         <div class="container about-div">
           <div class="about-div-1">
             {/* <h2 class="heading-secondary">Our beliefs</h2> */}
@@ -373,7 +403,7 @@ const Home = () => {
                 <span>Spotfire Developer</span>
               </li>
             </ul>
-            <a href="#cta" class="btn btn--full margin-right-sm btn-rights">
+            <a href="/careers" class="btn btn--full margin-right-sm btn-rights">
               Careers
             </a>
           </div>

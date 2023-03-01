@@ -19,11 +19,11 @@ const EnvoyData = () => {
           </div>
         </section>
       </div>
-      <section class="section-cta env" id="cta">
+      <section class="section-cta env first" id="cta">
         <div class="container">
           <div class="about-cta about-align">
             <div class="cta-text-box text">
-              <h2 class="heading-secondary">Who are we ?</h2>
+              {/* <h2 class="heading-secondary">Who are we ?</h2> */}
               <ul class="list">
                 <li class="list-item">
                   <ion-icon
@@ -71,10 +71,9 @@ const EnvoyData = () => {
             <div class="cta-about-box" aria-label="Woman enjoying food">
               <Player
                 src="https://assets4.lottiefiles.com/packages/lf20_nv3lkb9v.json"
-                className="player"
+                className="player animation-envoy-1"
                 loop
                 autoplay
-                style={{ height: '33rem', width: '33rem' }}
               />
             </div>
           </div>
@@ -86,10 +85,9 @@ const EnvoyData = () => {
             <div class="cta-about-box" aria-label="Woman enjoying food">
               <Player
                 src="https://assets2.lottiefiles.com/packages/lf20_qrg2wc9f.json"
-                className="player"
+                className="player animation-envoy-2"
                 loop
                 autoplay
-                style={{ height: '25rem', width: '25rem' }}
               />
             </div>
             <div class="cta-text-box box-2">
@@ -174,7 +172,10 @@ const EnvoyData = () => {
                 </li>
               </ul>
             </div>
-            <div class="cta-about-box" aria-label="Woman enjoying food">
+            <div
+              class="cta-about-box slider-box"
+              aria-label="Woman enjoying food"
+            >
               {/* <Player
                 src="https://assets5.lottiefiles.com/packages/lf20_r8v98dbe.json"
                 className="player"
@@ -184,6 +185,14 @@ const EnvoyData = () => {
               /> */}
               <EnvoySlider />
             </div>
+          </div>
+          <div className="demo-button">
+            <a
+              href="/contact-us"
+              class="btn btn--full margin-right-sm btn-rights"
+            >
+              Request for Demo
+            </a>
           </div>
         </div>
         {/* <div class="container">

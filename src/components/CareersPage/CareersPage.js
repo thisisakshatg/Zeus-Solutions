@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from '../Header/Header';
 import { useParams } from 'react-router-dom';
+import { useState } from 'react';
+import Overlay from '../Overlay/Overlay';
+import ApplyForm from '../ApplyForm/ApplyForm';
 
 const CareersPage = () => {
   const params = useParams();
@@ -64,17 +67,18 @@ const CareersPage = () => {
     primaryContent.l5 =
       '● Strong understanding of Agile principles. Experience working in SAFe Agile environment.';
     primaryContent.l6 =
-      '● Experience with Test Management tools – Rational Tool suite, JIRA.';
+      '● Strong understanding of Agile principles. Experience working in SAFe Agile environment.';
     primaryContent.l7 =
-      '● BDD Testing using any industry tools such as Cucumber is a plus';
+      '● Experience with Test Management tools – Rational Tool suite, JIRA.';
     primaryContent.l8 =
+      '● BDD Testing using any industry tools such as Cucumber is a plus';
+    primaryContent.l9 =
       '● Work with other colleagues, architects, Test lead and support the Design and execution for contact center related testing activities';
-    primaryContent.l9 = '● Validate IVR applications';
-    primaryContent.l10 =
-      '● Creates test scripts according to the business requirements. Responsible for planning, creating and Executing testcases.';
+    primaryContent.l10 = '● Validate IVR applications';
     primaryContent.l11 =
+      '● Creates test scripts according to the business requirements. Responsible for planning, creating and Executing testcases.';
+    primaryContent.l12 =
       '● Creates vulnerability and data privacy validation related test scripts according to the business requirements, SOX controls and regulatory requirements. Work with stakeholders to develop success criteria and execute and ensure the outcome meets definition of done.';
-    primaryContent.l12 = '';
 
     secondaryContent.l1 =
       '● Minimum 8+ years overallsoftware engineering, testing and assurance ';
@@ -96,6 +100,8 @@ const CareersPage = () => {
       '● Strong understanding of Agile and hands on in agile/scrum environments';
     secondaryContent.l11 =
       '● Huge plus: Experience and awareness of Threat intelligence, Cyber Security testing, Code Penetration testing, Network Penetration testing, Vulnerability scanning,Data privacy, Data security, Data masking. ';
+    secondaryContent.l12 =
+      '● Plus: Salesforceplatform or another CRM tool for testing – not admin, but understanding flows, screen testing, etc ';
   }
   if (industry === 'software-engineer') {
     title = 'JOB ID 10390 Software Engineer';
@@ -118,15 +124,12 @@ const CareersPage = () => {
       '● Ability to work with clients to in the Energy / Financial Services/ health care / Energy/ manufacturing industries ';
     primaryContent.l8 =
       '●  Create data tools for analytics and data scientist team members that assist them in building and optimizing software products.  ';
-    primaryContent.l9 = '● Validate IVR applications';
-    primaryContent.l10 =
+    primaryContent.l9 =
       '● Perform root cause analysis on internal and external data and processes to answer specific business questions and identify opportunities for improvement';
-    primaryContent.l11 =
+    primaryContent.l10 =
       '● Requirements Gathering, designing and developing ETL solutions using Informatica PowerCenter 6.x and above, Business Objects, SQL, PL/SQL, Oracle, SQL Server; testing; implementing and supporting data warehouses, XML, Access; Linux/UNIX- C++/Shell-script; TOAD; VSS/SVN; and MS Windows/Office/DOS; Clear Quest, Mercury Quality Center.';
-    primaryContent.l12 =
-      '● Requirements: Bachelor’s degree in CS/IT/ Comp Appln/Engg/Science/Math or related with at least 60 months of experience.  Travel and relocation to various unanticipated client locations throughout the United States may be required. Equal Opportunity Employer. ';
-    primaryContent.l13 =
-      'Send resume to: bala.narasimhan@zeussolutionsinc.com including the JOB ID.';
+    primaryContent.l11 =
+      '● Requirements: Bachelor’s degree in CS/IT/ Comp Appln/Engg/Science/Math or related with at least 60 months of experience. Send resume to: bala.narasimhan@zeussolutionsinc.com including the JOB ID. Travel and relocation to various unanticipated client locations throughout the United States may be required. Equal Opportunity Employer.  ';
   }
 
   if (industry === 'data-engineer') {
@@ -269,9 +272,20 @@ const CareersPage = () => {
     subheading = 'Send your resume to : hr@zeussolutionsinc.com';
   }
 
+  const [newPostOverlay, setNewPostOverlay] = useState(false);
+
+  const newPostOverlayHandler = () => {
+    setNewPostOverlay(!newPostOverlay);
+  };
+
   return (
     <div>
       <section className="section-industry-page">
+        {newPostOverlay && (
+          <Overlay>
+            <ApplyForm newPostOverlayHandler={newPostOverlayHandler} />
+          </Overlay>
+        )}
         <div className="full-img img-careersPage">
           <Header />
           <section class="section-contact-us">
@@ -455,6 +469,13 @@ const CareersPage = () => {
                 </li>
               )}
             </ul>
+            <button
+              className="btn btn--full btn-card btn--apply btn-desc"
+              onClick={newPostOverlayHandler}
+              style={{ marginBottom: '2rem' }}
+            >
+              Apply Now
+            </button>
           </div>
         </div>
         <br></br>

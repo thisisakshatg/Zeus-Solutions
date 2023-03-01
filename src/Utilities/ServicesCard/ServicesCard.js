@@ -70,43 +70,43 @@ const ServicesCard = (props) => {
         <ul class="meal-attributes">
           {cardContent.l1 != '' && (
             <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              {/* <ion-icon class="list-icon" name="checkmark-outline"></ion-icon> */}
               <span>{cardContent.l1}</span>
             </li>
           )}
           {cardContent.l2 != '' && (
             <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              {/* <ion-icon class="list-icon" name="checkmark-outline"></ion-icon> */}
               <span>{cardContent.l2}</span>
             </li>
           )}
           {cardContent.l3 != '' && (
             <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              {/* <ion-icon class="list-icon" name="checkmark-outline"></ion-icon> */}
               <span>{cardContent.l3}</span>
             </li>
           )}
           {cardContent.l4 != '' && (
             <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              {/* <ion-icon class="list-icon" name="checkmark-outline"></ion-icon> */}
               <span>{cardContent.l4}</span>
             </li>
           )}
           {cardContent.l5 != '' && (
             <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              {/* <ion-icon class="list-icon" name="checkmark-outline"></ion-icon> */}
               <span>{cardContent.l5}</span>
             </li>
           )}
           {cardContent.l6 != '' && (
             <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              {/* <ion-icon class="list-icon" name="checkmark-outline"></ion-icon> */}
               <span>{cardContent.l6}</span>
             </li>
           )}
           {cardContent.l7 != '' && (
             <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              {/* <ion-icon class="list-icon" name="checkmark-outline"></ion-icon> */}
               <span>{cardContent.l7}</span>
             </li>
           )}

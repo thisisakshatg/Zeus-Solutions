@@ -20,6 +20,10 @@ import Careers from './components/Careers/Careers';
 import CareersPage from './components/CareersPage/CareersPage';
 import ApplyForm from './components/ApplyForm/ApplyForm';
 import Services from './components/Services/Services';
+import PrivacyPage from './components/PrivacyPage/PrivacyPage';
+import FooterNew from './components/FooterNew/FooterNew';
+
+//  p1 p2 p3 p4 p5  -- --  p10
 
 function App() {
   return (
@@ -28,6 +32,13 @@ function App() {
         <Route path="/" exact>
           <Home />
           <Footer />
+        </Route>
+        <Route path="/home" exact>
+          <Home />
+          <Footer />
+        </Route>
+        <Route path="/header" exact>
+          <Header />
         </Route>
         <Route path="/contact-us">
           <ContactUs />
@@ -41,10 +52,10 @@ function App() {
           <Careers />
           <Footer />
         </Route>
-        {/* <Route path="/services" exact>
+        <Route path="/services" exact>
           <Services />
           <Footer />
-        </Route> */}
+        </Route>
         <Route path="/careers/:name">
           <CareersPage />
           <Footer />
@@ -70,10 +81,14 @@ function App() {
           <About />
           <Footer />
         </Route>
-
-        <Route path="/applyform">
-          <ApplyForm />
+        <Route path="/privacy-policy">
+          <PrivacyPage />
           <Footer />
+        </Route>
+
+        <Route path="/footernew">
+          <FooterNew />
+          {/* <Footer /> */}
         </Route>
 
         <Route path="*">

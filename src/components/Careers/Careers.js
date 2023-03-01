@@ -123,6 +123,7 @@ const Careers = () => {
           location="Houston, TX"
           contract="12 Months Contract"
           subheading="Send your resume to : hr@zeussolutionsinc.com"
+          newPostOverlayHandler={newPostOverlayHandler}
         />
         <CareersCard
           careers="java-developer"
@@ -133,6 +134,7 @@ const Careers = () => {
           location="Houston, TX"
           contract="12 Months Contract"
           subheading="Send your resume to : hr@zeussolutionsinc.com"
+          newPostOverlayHandler={newPostOverlayHandler}
         />
         <CareersCard
           careers="commodities-trading-and-risk-management-business-analyst"
@@ -143,6 +145,7 @@ const Careers = () => {
           location="Houston, TX"
           contract="12 Months Contract"
           subheading="Send your resume to : hr@zeussolutionsinc.com"
+          newPostOverlayHandler={newPostOverlayHandler}
         />
         <CareersCard
           careers="energy-trading-and-risk-management-expert"
@@ -153,6 +156,7 @@ const Careers = () => {
           location="Houston, TX"
           contract="12 Months Contract"
           subheading="Send your resume to : hr@zeussolutionsinc.com"
+          newPostOverlayHandler={newPostOverlayHandler}
         />
         <CareersCard
           careers="finance-and-restructuring-expert"
@@ -163,6 +167,7 @@ const Careers = () => {
           location="Houston, TX"
           contract="12 Months Contract"
           subheading="Send your resume to : hr@zeussolutionsinc.com"
+          newPostOverlayHandler={newPostOverlayHandler}
         />
       </div>
     </section>

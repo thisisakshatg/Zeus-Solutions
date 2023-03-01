@@ -30,7 +30,7 @@ const Services = () => {
           consultants are regarded as high value-add, insight oriented, business
           proposition focused delivery team.
         </p>
-        <div className="container grid grid--3-cols margin-bottom-md">
+        <div className="container grid grid--3-cols margin-bottom-md grid-services">
           <ServicesCard
             number={1}
             url="https://assets10.lottiefiles.com/packages/lf20_8chbmd3p.json"
@@ -46,13 +46,12 @@ const Services = () => {
         </div>
       </section>
 
-      <section class="section-cta env env-2" id="cta">
+      <section class="section-cta env" id="cta">
         <p class="container feature-text feature-service-2">
-          Zeus Solutions Inc is a Houston based consulting boutique that
-          specializes in delivering technology and risk management solutions to
-          Oil, Gas, Commodities, Energy Trading, Retail and Utility clients. Our
-          consultants are regarded as high value-add, insight oriented, business
-          proposition focused delivery team.
+          Our service includes a comprehensive consult to help identify gaps and
+          opportunities, a comprehensive report that includes a business plan,
+          investment proposal, project delivery guide, charter with timelines
+          and milestones, a cost analysis, and a schedule.
         </p>
         <div class="container">
           <div class="about-cta about-align">
@@ -107,10 +106,9 @@ const Services = () => {
             <div class="cta-about-box" aria-label="Woman enjoying food">
               <Player
                 src="https://assets4.lottiefiles.com/packages/lf20_jnqIFpi4XF.json"
-                className="player"
+                className="player animation-section-services-2"
                 loop
                 autoplay
-                style={{ height: '35rem', width: '35rem' }}
               />
             </div>
             <div class="cta-text-box box-2">
@@ -156,10 +154,10 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <section class="section-cta env env-3" id="cta">
+      <section class="section-cta env" id="cta">
         <div class="container">
           <div class="about-cta about-align margin-adjust">
-            <div class="cta-text-box text">
+            <div class="cta-text-box text box-3">
               <h2 class="heading-tertiary heading-services">Assessment</h2>
               <ul class="list">
                 <li class="list-item">
@@ -284,7 +282,10 @@ const Services = () => {
             </p>
             <br></br>
             <br></br>
-            <a href="#cta" class="btn btn--full margin-right-sm btn-rights">
+            <a
+              href="/contact-us"
+              class="btn btn--full margin-right-sm btn-rights"
+            >
               Contact Us
             </a>
           </div>

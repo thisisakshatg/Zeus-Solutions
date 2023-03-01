@@ -6,7 +6,7 @@ const ContactUs = () => {
   return (
     <div>
       <Cover heading="Contact Us" description="" />
-      <section class="section-cta" id="cta">
+      <section class="section-cta section-Contactt" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -18,9 +18,19 @@ const ContactUs = () => {
                   <input
                     id="full-name"
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Your Name*"
                     name="full-name"
                     required
+                    className="special"
+                  />
+                </div>
+                <div>
+                  {/* <label for="full-name">Full Name</label> */}
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="Subject"
+                    name="full-name"
                     className="special"
                   />
                 </div>
@@ -30,9 +40,9 @@ const ContactUs = () => {
                     <input
                       id="full-name"
                       type="text"
-                      placeholder="Your Subject"
+                      placeholder="Your Phone"
                       name="full-name"
-                      required
+                      // required
                     />
                   </div>
                   <div>
@@ -40,7 +50,7 @@ const ContactUs = () => {
                     <input
                       id="email"
                       type="email"
-                      placeholder="Your Email"
+                      placeholder="Your Email*"
                       name="email"
                       required
                     />
@@ -52,7 +62,7 @@ const ContactUs = () => {
                   <input
                     id="full-name"
                     type="text"
-                    placeholder="Your Message"
+                    placeholder="Your Message*"
                     name="full-name"
                     className="special-msg"
                     required
@@ -96,7 +106,7 @@ const ContactUs = () => {
                 <p className="heading-contact margin-helper">
                   Sat- Sun: Closed
                 </p>
-                <button class="btn btn--about">Book Meeting</button>
+                <button class="btn btn--about">Book a Meeting</button>
               </div>
             </div>
           </div>

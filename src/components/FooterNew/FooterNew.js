@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/img/logo.png';
 
-const Footer = () => {
+const FooterNew = () => {
   return (
     <footer role="contentinfo" className="footer-new">
       <div>
@@ -9,21 +9,17 @@ const Footer = () => {
           <a aria-current="page" class="" href="/">
             <div className="logo">
               <img
+                className="footer-new-logo"
                 src={logo}
                 alt="Hatchet Agency Logo"
                 height="auto"
-                className="footer-new-logo"
               />
             </div>
           </a>
-          {/* <div> */}
-          {/* </div> */}
-          <small className="small-footer">
-            © 2022 Zeus Solutions Inc. All Rights Reserved.
-          </small>
+          <small>© 2022 Zeus Solutions Inc., All Rights Reserved.</small>
           <br />
           <a href="/privacy-policy">
-            <small className="small-foot">Privacy Policy</small>
+            <small>Privacy Policy</small>
           </a>
         </div>
         <div class="column">
@@ -98,4 +94,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterNew;

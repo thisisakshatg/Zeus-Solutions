@@ -17,13 +17,14 @@ const Industries = () => {
           </div>
         </section>
       </div>
-      <div className="container grid grid--3-cols margin-bottom-md">
+      <div className="container grid grid--3-cols margin-bottom-md indus">
         <Card
           image="resources.jpg"
           tag="Oil"
           title="Energy, Resources and Utilities"
           description="As demand for petroleum and petroleum products plummeted, oil and gas companies are on the verge of reinventing...."
           industry="energy"
+          homepage="false"
         />
         <Card
           image="healhcare.jpg"
@@ -31,6 +32,7 @@ const Industries = () => {
           title="Healthcare and Biotechnology"
           description="Research and development in biotech and healthcare have increased the dependency on extensive of use of big data.... "
           industry="healthcare"
+          homepage="false"
         />
         <Card
           image="finance.jpg"
@@ -38,6 +40,7 @@ const Industries = () => {
           title="Finance and Wealth Management"
           description="Data is growing at an exponential rate, whether fostered by social media or by devices with built-in chips, big data...."
           industry="finance"
+          homepage="false"
         />
         <Card
           image="telecom.jpg"
@@ -45,6 +48,7 @@ const Industries = () => {
           title="Telecom Industry"
           description="The telecom sector is one of the most disrupted fields in modern digitalization and is struggling to keep up with the...."
           industry="telecom"
+          homepage="false"
         />
         <Card
           image="agri.jpg"
@@ -52,6 +56,7 @@ const Industries = () => {
           title="Agriculture Industry"
           description="By 2050, world is expecting to have around 10 Billion people, and India as the fastest developing country is likely...."
           industry="agriculture"
+          homepage="false"
         />
         <Card
           image="insurance.jpg"
@@ -59,6 +64,7 @@ const Industries = () => {
           title="Insurance Industry"
           description="While we are all being prepared to face risks which we are unaware or aren’t prepared for, we feel happy...."
           industry="insurance"
+          homepage="false"
         />
       </div>
     </section>
