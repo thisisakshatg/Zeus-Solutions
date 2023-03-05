@@ -71,7 +71,7 @@ const ContactUs = () => {
                   <textarea
                     cols="50 "
                     rows="7"
-                    placeholder="Your Message"
+                    placeholder="Your Message*"
                     data-assigned-row="3"
                   ></textarea>
                 </div>

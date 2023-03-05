@@ -947,7 +947,7 @@ strong {
   }
 
   footer .footer-new-logo {
-    width: 21rem;
+    width: 19rem;
   }
 
   .footer-new .logo {
@@ -1285,7 +1285,7 @@ textarea {
   }
 
   .section-Contactt .icon-loc {
-    width: 5.1rem;
+    width: 4.9rem;
     margin-right: 1.8rem;
   }
 
@@ -1316,28 +1316,37 @@ textarea {
   }
 
   .new-1 {
-    margin-left: 6rem !important;
+    margin-left: 4rem !important;
   }
 
   .footer-new .new-2 {
-    margin-left: 10.5rem !important;
+    margin-left: 11rem !important;
   }
 
   .footer-new .new-3 {
-    margin-left: 8.5rem !important;
+    margin-left: 8rem !important;
   }
 
   .footer-new .small-foot {
-    margin-left: 12rem;
+    margin-left: 11rem;
   }
 
   .footer-new .small-footer {
     display: inline-block;
-    margin-left: 14rem;
+    margin-left: 11rem;
+  }
+
+  .footer-new a {
+    font-size: 1.7rem;
+  }
+
+  .footer-new small {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.1rem;
   }
 
   .footer-new .logo {
-    margin-left: 14rem;
+    margin-left: 9rem;
     margin-bottom: 3rem;
   }
 
@@ -4093,7 +4102,7 @@ center-full,
   vertical-align: baseline;
   font-size: 1.75rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 2;
 }
 
 .footer-new .list-icon {
